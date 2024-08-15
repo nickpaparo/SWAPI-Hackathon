@@ -1,0 +1,25 @@
+Planets:
+H3: "${planets.name}"
+"Climate: object"
+"${planets.surface_water}% surface water"
+"${planets.terrain} terrain"
+"Population: ${planets.population}"
+
+Species:
+H3: "${species.name}"
+"${species.language}"
+"Classification: ${species.classification}"
+"Average Lifespan: ${species.average_lifespan}"
+
+Vehicles:
+H3: "${vehicle.name}"
+"${vehicles.vehicle_class} with a crew of ${vehicles.crew}"
+"Manufactured by ${vehicles.manufacturer}"
+"Total cost: ${vehicles.cost_in_credits} Credits"
+
+People:
+H3: "${people.name}"
+"Homeworld: ${people.homeworld}"
+"Species: ${people.species}"
+"Weighs ${people.mass} kg"
+
