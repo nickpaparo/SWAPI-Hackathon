@@ -1,0 +1,160 @@
+@use "../partials/variables" as *;
+@use "../partials/fonts" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.header {
+  display: flex;
+  background-color: #000000;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: #ffe81f 0.15rem solid;
+
+  &__image-container {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    width: 33%;
+  }
+  &__image {
+    display: flex;
+    max-width: 20%;
+    background-color: #000000;
+  }
+}
+
+.hero {
+  background-image: url(../assets/star-wars-background-image.jpg);
+  height: 45vw;
+  width: 100vw;
+  display: flex;
+  background-repeat: round;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.25rem #ffe81f solid;
+
+  &__copy-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+  }
+
+  &__copy {
+    display: flex;
+    font-family: "Star Wars";
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    color: #ffe81f;
+  }
+}
+
+.game {
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+
+  &__intro-container {
+    display: flex;
+    justify-content: center;
+    font-family: "Star Wars";
+    color: #ffe81f;
+    font-size: 3rem;
+    font-weight: 600;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 8rem 0 5em 0;
+  }
+
+  &__intro-copy {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+
+  &__arrow {
+    display: flex;
+    font-size: 4rem;
+    content: "\21E3";
+    justify-content: center;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7rem;
+  list-style: none;
+  background-color: #000000;
+  padding-bottom: 3rem;
+
+  &__headers {
+    font-family: $base-font;
+    font-size: 2rem;
+    color: #ffe81f;
+  }
+
+  &__heading {
+    font-family: $base-font;
+    font-size: 2.5rem;
+    color: #ffe81f;
+  }
+
+  &__options {
+    display: flex;
+    gap: 3rem;
+  }
+
+  &__button {
+    border-radius: 0.5rem;
+    border-color: yellow;
+    box-shadow: 0.2rem 0.35rem #ffe81f4d;
+    background-color: black;
+    height: 50vh;
+    width: 25vw;
+    margin-bottom: 10%;
+  }
+
+  &__points {
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    list-style: none;
+    color: #ffe81f;
+    font-family: $base-font;
+    text-align: left;
+  }
+}
+
+.footer {
+  background-color: black;
+  width: 100vw;
+  padding: 3rem;
+  border-top: #ffe81f solid 0.25rem;
+
+  &__heading {
+    font-family: $base-font;
+    color: #ffe81f;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  &__subheader {
+    color: #ffe81f;
+    text-align: center;
+  }
+
+  &__subheader-image {
+    max-height: 5vh;
+    max-width: 5vh;
+    padding: 0 0.5rem 0 0.5rem;
+    filter: invert(96%) sepia(85%) saturate(7497%) hue-rotate(333deg)
+      brightness(102%) contrast(107%);
+  }
+}

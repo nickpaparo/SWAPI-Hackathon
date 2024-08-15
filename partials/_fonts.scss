@@ -1,21 +1,7 @@
 @use "./variables" as *;
 
 @font-face {
-    font-family: "Star Wars Regular", Arial, Helvetica, sans-serif;
-    src: url(../partials/fonts/star-jedi-font/StarJedi-DGRW.ttf) format("truetrype");
-}
-
-@font-face {
-    font-family: "Star Wars Bold", Arial, Helvetica, sans-serif;
-    src: url(./fonts/star-jedi-font/StarJediRounded-jW3R.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: "Star Wars Hollow", Arial, Helvetica, sans-serif;
-    src: url(./fonts/star-jedi-font/StarJediHollow-A4lL.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: "Droid", Arial, Helvetica, sans-serif;
-    src: url(./fonts/droidobesh-depot-font/DroidobeshDepot-gxmVE.otf) format("opentype");
+    font-family: $droid-font;
+    src: url(./fonts/aurebesh-droid-font/AurebeshDroidRegular-Mnwe.ttf) format("truetype");
+    font-weight: normal;
 }

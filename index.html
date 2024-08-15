@@ -4,28 +4,175 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
-    <script src="./script/index.js" defer></script>
-    <link rel="stylesheet" src="./styles/index.css" />
+    <script src="./script/starwarscya_api.js" defer></script>
+    <script src="./script/starwarscya_main.js" defer></script>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link href="https://fonts.cdnfonts.com/css/star-wars" rel="stylesheet" />
     <title>Star Wars API Hackathon</title>
   </head>
   <body>
-    <header>
-      <img />
-      <img />
+    <header class="header">
+      <div class="header__image-container">
+        <img
+          class="header__image"
+          src="./assets/file.png"
+          alt="rebel alliance logo"
+        />
+        <p class="hero__copy">VS</p>
+        <img
+          class="header__image"
+          src="./assets/6a908465802589a7537497b90e4c8757.jpg"
+          alt="galactic imperial seal"
+        />
+      </div>
     </header>
     <main>
       <section class="hero">
         <div class="hero__copy-container">
-          <p class="hero__copy">Welcome to a galaxy far far away...</p>
+          <h1 class="hero__copy">Welcome to a galaxy far far away...</h1>
         </div>
       </section>
       <section class="game">
         <div class="game__intro-container">
-            <div class="game__intro-copy">
-                <p>Chose your </p>
-            </div>
+          <p class="game__intro-copy">
+            Chose an option below to start your journey!
+          </p>
+          <span class="game__arrow">&#8675;</span>
+          <span class="game__arrow">&#8675;</span>
+          <span class="game__arrow">&#8675;</span>
+        </div>
+      </section>
+      <section class="cards" id="cards">
+        <h2 class="cards__headers">Choose your planet</h2>
+        <div class="cards__options" id="cards__planets">
+          <button class="cards__button">
+            <h3 class="cards__heading"></h3>
+            <img class="cards__image" src="" alt="" />
+            <ul class="cards__info">
+              <li class="cards__points cards__climate"></li>
+              <li class="cards__points cards__surface-water"></li>
+              <li class="cards__points cards__terrain"></li>
+            </ul>
+          </button>
+          <button class="cards__button">
+            <h3 class="cards__heading"></h3>
+            <img class="cards__image" alt="" />
+            <ul class="cards__info">
+              <li class="cards__points cards__climate"></li>
+              <li class="cards__points cards__surface-water"></li>
+              <li class="cards__points cards__terrain"></li>
+            </ul>
+          </button>
+          <button class="cards__button">
+            <h3 class="cards__heading"></h3>
+            <img class="cards__image" src="" alt="" />
+            <ul class="cards__info">
+              <li class="cards__points cards__climate"></li>
+              <li class="cards__points cards__surface-water"></li>
+              <li class="cards__points cards__terrain"></li>
+            </ul>
+          </button>
+        </div>
+        <h2 class="cards__headers">Choose your species</h2>
+        <div class="cards__options" id="cards__species">
+          <button class="cards__button">
+            <h3 class="cards__heading"></h3>
+            <img class="cards__image" src="" alt="" />
+            <ul class="cards__info">
+              <li class="cards__points"></li>
+              <li class="cards__points"></li>
+              <li class="cards__points"></li>
+            </ul>
+          </button>
+          <button class="cards__button">
+            <h3 class="cards__heading"></h3>
+            <img class="cards__image" src="" alt="" />
+            <ul class="cards__info">
+              <li class="cards__points"></li>
+              <li class="cards__points"></li>
+              <li class="cards__points"></li>
+            </ul>
+          </button>
+          <button class="cards__button">
+            <h3 class="cards__heading"></h3>
+            <img class="cards__image" src="" alt="" />
+            <ul class="cards__info">
+              <li class="cards__points"></li>
+              <li class="cards__points"></li>
+              <li class="cards__points"></li>
+            </ul>
+          </button>
+        </div>
+        <h2 class="cards__headers">Choose your vehicle</h2>
+        <div class="cards__options" id="cards__vehicles">
+          <button class="cards__button">
+            <h3 class="cards__heading"></h3>
+            <img class="cards__image" src="" alt="" />
+            <ul class="cards__info">
+              <li class="cards__points"></li>
+              <li class="cards__points"></li>
+              <li class="cards__points"></li>
+            </ul>
+          </button>
+          <button class="cards__button">
+            <h3 class="cards__heading"></h3>
+            <img class="cards__image" src="" alt="" />
+            <ul class="cards__info">
+              <li class="cards__points"></li>
+              <li class="cards__points"></li>
+              <li class="cards__points"></li>
+            </ul>
+          </button>
+          <button class="cards__button">
+            <h3 class="cards__heading"></h3>
+            <img class="cards__image" src="" alt="" />
+            <ul class="cards__info">
+              <li class="cards__points"></li>
+              <li class="cards__points"></li>
+              <li class="cards__points"></li>
+            </ul>
+          </button>
+        </div>
+        <h2 class="cards__headers">Choose your person</h2>
+        <div class="cards__options" id="cards__people">
+          <button class="cards__button">
+            <h3 class="cards__heading"></h3>
+            <img class="cards__image" src="" alt="" />
+            <ul class="cards__info">
+              <li class="cards__points"></li>
+              <li class="cards__points"></li>
+              <li class="cards__points"></li>
+            </ul>
+          </button>
+          <button class="cards__button">
+            <h3 class="cards__heading"></h3>
+            <img class="cards__image" src="" alt="" />
+            <ul class="cards__info">
+              <li class="cards__points"></li>
+              <li class="cards__points"></li>
+              <li class="cards__points"></li>
+            </ul>
+          </button>
+          <button class="cards__button">
+            <h3 class="cards__heading"></h3>
+            <img class="cards__image" src="" alt="" />
+            <ul class="cards__info">
+              <li class="cards__points"></li>
+              <li class="cards__points"></li>
+              <li class="cards__points"></li>
+            </ul>
+          </button>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <h3 class="footer__heading">May the force be with you...</h3>
+      <p class="footer__subheader">
+        Made with<img
+          src="./assets/icons8-star-wars.svg"
+          class="footer__subheader-image"
+        />by Geneis, Elizabeth, and Nick
+      </p>
+    </footer>
   </body>
 </html>
